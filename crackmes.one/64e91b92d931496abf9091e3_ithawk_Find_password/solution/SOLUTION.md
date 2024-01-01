@@ -46,7 +46,7 @@ void encrypt(char *arg1)
 
 # the plan
 * 1/ write a decrypt function
-* 2/ decrypt the fixed password with the decrypt function
+* 2/ pass the fixed password in the right format to the decrypt function
 * 3/ complile the decryptor
 * 4/ run the decryptor
 
@@ -66,7 +66,7 @@ void encrypt_decrypt(char * str, int diff) {
 * see file [decrypt.c](./decrypt.c)  for the result
 
 
-## 2/ decrypt the fixed password with the decrypt function
+## 2/ pass the fixed password in the right format to the decrypt function
 * copy the fixed password a hex in little endian to the decrypt program
 ```
     char s[] = {
@@ -76,6 +76,7 @@ void encrypt_decrypt(char * str, int diff) {
                 0x23, 0x3e, 0x29, 0x27, 0x42, 0x73,
     };
 ```
+* see file [decrypt.c](./decrypt.c)  for the result
 
 
 ## 3/ complile the decryptor
