@@ -9,7 +9,7 @@
 
 
 # initial investigation
-* loaded the executable `luna` into cutter
+* loaded the executable `P@ssw0rd` into cutter
 * the password is read in from stdin
 * the passed password will be encrypted using the function `encrypt` and compared with a fixed password.
 * `Try Harder and Debug More!` will be printed in case of a wrong password
