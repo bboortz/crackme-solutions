@@ -32,14 +32,14 @@
 ```
 ~/bin/objconv -fnasm -wex -xs luna luna.s
 ```
-* see file `luna.s` for the result
+* see file [luna.s](./luna.s)  for the result
 
 
 ## 2/ stripping the whole assembly down into the function only
 * objconv has named the function `luna` `_Z4lunay`
 * copy luna.s to func.s
 * remove everything from func.s excetional the function `_Z4lunay` and the global definition of the function
-* see file func.s for the result
+* see file [func.s](./func.s)  for the result
 
 
 ## 3/ taking the assembly of the function luna and compiling it
@@ -49,7 +49,7 @@ nasm  -felf64 -o func.o func.s
 
 
 ## 4/ writing a password generator which is using the function luna
-* see file `generator.c` for the source of the password generator
+* see file [generator.c](./generator.s) for the source of the password generator
 ```
 gcc -static -o generator func.o generator.c 
 ```
