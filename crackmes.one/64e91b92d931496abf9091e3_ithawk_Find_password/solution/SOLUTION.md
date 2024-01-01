@@ -14,7 +14,7 @@
 * the passed password will be encrypted using the function `encrypt` and compared with a fixed password.
 * `Try Harder and Debug More!` will be printed in case of a wrong password
 * `Congrats, Access Granted!!` will be printed in case of a right password
-* the fixex password is defined using the decompiler as follows:
+* according the decompiler is the fixex password is defined as follows:
 ```
         s2 = (char *)0x3a275e3d713c4a39;
         var_40h = 0x2b233a642a232a68;
@@ -75,13 +75,15 @@ void encrypt_decrypt(char * str, int diff) {
                 0x4a, 0x68, 0x2a, 0x39, 0x29, 0x23, 0x27, 0x2b,
                 0x23, 0x3e, 0x29, 0x27, 0x42, 0x73,
     };
+```
 
-* 3/ complile the decryptor
+
+## 3/ complile the decryptor
 ```
 gcc -Wall -o decrypt decrypt.c 
 ```
 
-* 4/ run the decryptor
+## 4/ run the decryptor
 ```
 $ ./decrypt   
 IN:  9J<q=^':h*#*d:#+Jh*9)#'+#>)'Bs
