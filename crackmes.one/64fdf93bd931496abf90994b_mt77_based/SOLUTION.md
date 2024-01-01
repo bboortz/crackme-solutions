@@ -15,8 +15,8 @@
 * the password is read in from stdin
 * `Invalid value` will be printed in case of a wrong password
 * `Welcome!` will be printed in case of a right password
-* the main function is calling the function luna
-* function signature is: bool luna(uint64_t password)
+* the main function is calling the function `luna`
+* function signature is: `bool luna(uint64_t password)`
 * this function is verifying the read in password
 
 
