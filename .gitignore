@@ -1,4 +1,7 @@
-# Prerequisites
+# vim swap files
+#*.swp
+
+# Prerequisitesi
 *.d
 
 # Object files
